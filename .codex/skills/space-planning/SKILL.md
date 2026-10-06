@@ -1,7 +1,7 @@
 ---
 name: space-planning
 
-## Kitchen and bathroom locations are fixed service zones.
+## Kitchen and Bathroom are Fixed Architectural Service Zones.
 厨房和卫生间属于固定服务区域。 Fixed Wet Area（固定湿区）
 
 卫生间、厨房属于不可随意移动区域。
