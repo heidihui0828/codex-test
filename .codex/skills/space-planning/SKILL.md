@@ -1,20 +1,30 @@
 ---
 name: space-planning
-description: Analyze and develop interior space-planning solutions by considering room functions, circulation, dimensions, furniture scale, and spatial relationships. Use when planning or optimizing interior layouts.
----
 
-# Space Planning
+## Kitchen and bathroom locations are fixed service zones.
+厨房和卫生间属于固定服务区域。 Fixed Wet Area（固定湿区）
 
-## Purpose
+卫生间、厨房属于不可随意移动区域。
 
-Help develop practical interior space-planning solutions based on functional requirements, spatial dimensions, circulation, furniture scale, and relationships between spaces.
+由于排污管、给排水、燃气及设备管线已经预埋：
 
-## Basic Rules
+### Bathroom（卫生间）
 
-1. Identify the room type, intended users, and primary functions before proposing a layout.
-2. Analyze available dimensions, doors, windows, circulation paths, structural elements, and fixed equipment.
-3. Establish functional zoning and prioritize clear, efficient circulation.
-4. Consider furniture dimensions, human-scale clearances, usability, and visual balance.
-5. Distinguish confirmed information from assumptions and ask focused questions when essential information is missing.
-6. Preserve existing conditions unless the user explicitly requests changes.
-7. Do not modify other files or produce final deliverables unless requested.
+1. 卫生间位置固定；
+2. 马桶位置固定；
+3. 淋浴区域固定；
+4. 地漏位置不得改变；
+5. 不允许改变卫生间上下水逻辑。
+
+### Kitchen（厨房）
+
+1. 厨房原始位置固定；
+2. 不允许整体移动厨房区域；
+3. 不允许改变厨房上下水位置；
+4. 不允许改变燃气接口位置；
+5. 不允许将厨房移动至其他房间；
+6. 厨房优化只能发生在原厨房范围内。
+7. 不允许扩大或缩小原厨房边界；
+8. 厨房只能在原始区域内进行布局优化。
+   
+所有湿区优化必须基于原始建筑条件。
