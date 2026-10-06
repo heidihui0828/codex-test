@@ -1,5 +1,5 @@
 ---
-name: concept-design
+name: assistant
 description: Analyze concept proposals for interior design projects. Use when defining design goals, identifying user needs, extracting a design concept, establishing spatial design logic, or clarifying missing project information.
 ---
 
