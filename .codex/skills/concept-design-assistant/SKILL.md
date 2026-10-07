@@ -10,6 +10,7 @@ description: >
   分析室内设计项目概念方案。
   用于定义设计目标、识别用户需求、提炼设计概念、
   建立空间设计逻辑以及补充缺失项目信息。
+---
   
 # Concept Design Assistant / 概念设计助手
 
@@ -127,54 +128,24 @@ Develop coherent interior design concepts aligned with project goals, user needs
 
    建立空间逻辑，包括分区、动线、层次、材料和灯光。
 
-   including:
-   包括：
-- zoning
-  空间分区
-  
-- circulation
-  动线规划
-  
-- spatial hierarchy
-  空间层次
-  
-- material strategy
-  材料策略
-  
-- lighting strategy
-  灯光策略
-  
-- furniture planning
-  家具规划
+   Including:
 
-5. Ask focused questions when information is insufficient.
+   - Zoning（空间分区）
+
+   - Circulation（动线规划）
+
+   - Spatial hierarchy（空间层次）
+
+   - Material strategy（材料策略）
+
+   - Lighting strategy（灯光策略）
+
+   - Furniture planning（家具规划）
+   - 
+4. Ask focused questions when information is insufficient.
 
    信息不足时提出针对性问题。
 
-
-## Design Output Requirements（设计输出要求）
-
-Concept design output should include:
-
-概念设计输出应包括：
-
-1. Project background.
-   项目背景。
-
-2. User requirements analysis.
-   用户需求分析。
-
-3. Design concept statement.
-   设计概念说明。
-
-4. Spatial design strategy.
-   空间设计策略。
-
-5. Material and color direction.
-   材料与色彩方向。
-
-6. Visual reference board.
-   视觉参考板。
 
 
 ## Design Output Requirements（设计输出要求）
@@ -267,3 +238,5 @@ It should not:
 
 - generating final rendering images；
   生成最终效果图。
+
+ 
