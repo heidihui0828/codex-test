@@ -41,8 +41,6 @@ Develop functional and logical spatial planning solutions.
 4. Respect fixed architectural constraints.
 
    遵守固定建筑条件。
-
-
 ---
 
 ## Space Planning Requirements（空间规划要求）
@@ -65,7 +63,6 @@ Space planning output should include:
 - 家务流线；
 - 功能流线。
 
-
 3. Furniture Layout（家具布局）
 
 规划：
@@ -74,7 +71,6 @@ Space planning output should include:
 - 摆放关系；
 - 使用舒适度。
 
-
 4. Functional Relationship（功能关系）
 
 分析：
@@ -82,7 +78,6 @@ Space planning output should include:
 - 空间连接；
 - 使用逻辑；
 - 生活方式匹配。
-
 
 5. Storage Planning（收纳规划）
 
@@ -95,12 +90,9 @@ Space planning output should include:
 
 ---
 
-# Kitchen and Bathroom are Fixed Architectural Service Zones
-
-# 厨房和卫生间属于固定建筑服务区域
+# Kitchen and Bathroom are Fixed Architectural Service Zones / 厨房和卫生间属于固定建筑服务区域
 
 Fixed Wet Area（固定湿区）
-
 
 卫生间、厨房属于不可随意移动区域。
 
@@ -172,6 +164,13 @@ Space planning output should clearly explain:
 
 5. Space optimization logic（空间优化逻辑）
 
+---
+
+## Planning Constraint（规划约束）
+
+Space planning must be based on the original architectural plan.
+
+空间规划必须基于原始建筑平面。
 
 ---
 
