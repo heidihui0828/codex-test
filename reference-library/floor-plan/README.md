@@ -233,7 +233,10 @@ When generating floor plans:
 5. Do not copy architectural layouts from reference images.
 
    不复制参考图片中的建筑布局。
+   
+6. Always prioritize original project drawings over reference images.
 
+   始终以原始项目图纸为最高依据，参考图片仅用于视觉表达。
 
 
 ---
