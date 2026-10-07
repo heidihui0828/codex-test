@@ -12,7 +12,6 @@
 6. 禁止改变承重墙、结构墙及固定建筑构件；
 7. 右上角参考平面图中的建筑边界必须作为效果图生成的固定约束。
 
-
 ## Floor Plan Reference Style Lock（平面图表现锁定）
 
 当用户要求生成平面图、方案图或设计展示图时：
@@ -25,9 +24,77 @@
 6. 保持建筑设计手绘方案图风格；
 7. 不生成照片化、3D渲染化平面图；
 8. 不增加原图不存在的空间。
-9. 空间布局锁定（建议补）
-10. 可修改范围锁定
 
+
+## Visual Reference Library（视觉标准图库）
+
+平面图绘制必须参考：
+
+reference/floor-plan-style-reference.jpg
+
+该文件作为永久视觉标准（Permanent Visual Standard）。
+
+Reference image defines:
+
+参考图片定义：
+
+1. Architectural hand-drawn floor plan style.
+   建筑手绘平面表达风格。
+
+2. Black and white line drawing.
+   黑白线稿表现。
+
+3. Wall line thickness and hierarchy.
+   墙体线条粗细关系。
+
+4. Furniture line drawing style.
+   家具线稿表达方式。
+
+5. Annotation placement.
+   文字说明布局方式。
+
+6. Professional architectural presentation style.
+   专业建筑方案展示风格。
+
+
+The reference image defines graphic style only, not architectural layout.
+
+参考图片只定义绘图表现方式，不定义建筑布局。
+
+所有生成的平面图必须接近该视觉标准。
+
+## Space Layout Preservation（空间布局锁定）
+
+生成效果图和平面方案时：
+
+1. 必须保持原始平面图空间关系；
+2. 不允许改变房间位置；
+3. 不允许改变空间面积比例；
+4. 不允许合并或拆分原有空间；
+5. 不允许通过视觉设计改变建筑功能分区；
+6. 厨房、卫生间必须遵守 Fixed Wet Area（固定湿区）规则；
+7. 所有设计只能发生在原始空间范围内。    
+
+## Allowed Visual Modification（可修改范围锁定）
+
+效果图设计允许调整：
+
+- 材料；
+- 色彩；
+- 家具；
+- 灯光；
+- 软装；
+- 收纳系统。
+
+禁止调整：
+
+- 建筑结构；
+- 外墙轮廓；
+- 房间位置；
+- 厨房位置；
+- 卫生间位置；
+- 门窗关系；
+- 原始空间比例。
 
 ## Layout Annotation Rules（文字排版规则）
 
@@ -38,23 +105,4 @@
 3. 保持文字排列整齐；
 4. 不覆盖建筑轮廓、家具或重要设计信息。
 
-
 ## Interior Rendering Constraint（室内效果图约束）
-
-室内效果表现只能改变：
-
-- 材料；
-- 色彩；
-- 家具；
-- 灯光；
-- 软装；
-- 收纳设计。
-
-不得改变：
-
-- 建筑结构；
-- 房间位置；
-- 厨房位置；
-- 卫生间位置；
-- 门窗关系；
-- 原始空间比例。
