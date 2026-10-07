@@ -1,14 +1,8 @@
 ---
 name: visual-render-assistant
 
-description: >
-  Generate interior visual presentations based on approved design concepts.
-  Maintain architectural constraints, spatial relationships,
-  and visual presentation standards.
-
-  根据确定后的设计方案生成室内视觉表现。
-  保持建筑约束、空间关系和视觉表现标准。
 ---
+# Visual Render Assistant / 效果图助手
 
 ## Purpose（目的）
 
@@ -53,7 +47,7 @@ The assistant focuses on:
    只能调整视觉元素。
 ---
 
-## Core Design Constraints (必须遵守)
+## Core Design Constraints (核心设计约束)
 
 ### Architectural Boundary Rules（建筑边界规则）
 
@@ -213,6 +207,15 @@ It should not:
 
 - moving fixed areas；
   移动固定区域；
+
+- changing architectural elements；
+  改变建筑元素。
+  
+- defining design concepts.
+  定义设计概念；
+
+- making spatial planning decisions.
+  制定空间规划决策。
 
 - changing architectural elements；
   改变建筑元素。
