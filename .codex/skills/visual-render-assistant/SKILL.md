@@ -86,9 +86,9 @@ Reference path（参考路径）:
 reference-library/floor-plan/reference/
 
 
-The reference library is the permanent visual standard.
+The reference library defines graphic style only, not architectural layout.
 
-该图库作为永久视觉标准。
+参考图库只定义绘图表现方式，不定义建筑布局。
 
 
 Reference images define:
