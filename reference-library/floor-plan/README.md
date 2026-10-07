@@ -20,9 +20,9 @@ The purpose is to maintain consistent graphic language across all generated floo
 # Reference Usage（参考使用规则）
 
 
-The reference images define graphic style only.
+Reference images must not be interpreted as project-specific drawings.
 
-参考图片只定义绘图表现方式。
+参考图片不得被理解为当前项目建筑图。
 
 They do not define:
 
@@ -114,48 +114,92 @@ Reference elements:
 
 Purpose:
 
-用途：
+用途:
 
 
-This library defines the visual presentation standards for architectural floor plan drawings.
+Defines professional presentation layout and graphic composition.
+
+定义专业方案展示排版和图面构成方式。
+
 
 Reference elements:
 
-The reference images define graphic style only.
-
-They do not define architectural layout.
-
-参考图片只定义绘图表现方式，不定义建筑布局。
-
-参考内容：
+参考内容:
 
 
 - Graphic composition.
-  
+
   图面构图关系。
 
 
 - Annotation placement.
-  
+
   文字标注布局。
 
 
 - Information hierarchy.
-  
+
   信息层级关系。
 
 
 - White space control.
-  
+
   留白比例控制。
 
 
 - Architectural presentation board style.
-  
+
   建筑方案展示板风格。
 
 
+---
 
+# Reference Selection Rules（参考调用规则）
+
+
+When creating floor plan presentations:
+
+生成平面方案展示时：
+
+
+Reference Image 01 should be used for:
+
+参考图片01用于：
+
+
+- Drawing language.
+
+  制图语言。
+
+
+- Line weight.
+
+  线条关系。
+
+
+- Furniture representation.
+
+  家具表达。
+
+
+Reference Image 02 should be used for:
+
+参考图片02用于：
+
+
+- Layout composition.
+
+  页面构成。
+
+
+- Annotation arrangement.
+
+  标注布局。
+
+
+- Presentation hierarchy.
+
+  展示层级。
 ---
 
 # Generation Rules（生成规则）
