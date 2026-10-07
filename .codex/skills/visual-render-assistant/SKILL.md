@@ -71,7 +71,46 @@ Process（流程）:
 
 ## Core Design Constraints (核心设计约束)
 
+## Space Layout Preservation（空间布局锁定）
 
+When generating visual presentations:
+
+生成视觉表现时：
+
+
+1. Maintain original spatial relationships.
+
+保持原始空间关系。
+
+
+2. Do not change room locations.
+
+不得改变房间位置。
+
+
+3. Do not change spatial proportions.
+
+不得改变空间面积比例。
+
+
+4. Do not merge or split existing spaces.
+
+不得合并或拆分原有空间。
+
+
+5. Kitchen and bathroom locations must not be moved.
+
+厨房和卫生间位置不得移动。
+
+
+6. Fixed wet areas must follow original building conditions.
+
+固定湿区必须遵守原始建筑条件。
+
+
+7. All design modifications must occur within the original spatial boundaries.
+
+所有设计调整只能发生在原始空间范围内。
 
 ### Architectural Boundary Rules（建筑边界规则）
 
@@ -137,22 +176,35 @@ All generated floor plans must follow this visual standard.
 
 
 
-## Space Layout Preservation（空间布局锁定）
+## Orientation Preservation（空间方向锁定） ← 新增
 
-生成效果图和平面方案时：
+When generating visual presentations:
 
-1. 必须保持原始平面图空间关系；
-2. 不允许改变房间位置；
-3. 不允许改变空间面积比例；
-4. 不允许合并或拆分原有空间；
-5. 不允许通过视觉设计改变建筑功能分区；
-6. 厨房、卫生间必须遵守 Fixed Wet Area（固定湿区）规则；
-   
-   Kitchen and bathroom locations must not be moved.
-   厨房和卫生间位置不得移动
-   
-7. 所有设计只能发生在原始空间范围内。    
+生成视觉表现时：
 
+1. Maintain the original orientation of the reference floor plan.
+
+保持原始平面图方向一致。
+
+
+2. Do not mirror, rotate, or flip the spatial layout.
+
+不得镜像、旋转或翻转空间布局。
+
+
+3. Left and right spatial relationships must remain identical.
+
+空间左右关系必须保持一致。
+
+
+4. Entrance, windows, doors, kitchen and bathroom directions must match the original plan.
+
+入口、窗户、门、厨房和卫生间方向必须与原始平面一致。
+
+
+5. The generated image must correspond to the same viewpoint logic as the original drawing.
+
+生成视角必须符合原始平面图逻辑。
 
 
 ## Allowed Visual Modification（可修改范围锁定）
