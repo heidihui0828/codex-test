@@ -75,40 +75,65 @@ The assistant focuses on:
 
 ## Visual Reference Library（视觉标准图库）
 
-平面图绘制必须参考：
 
-reference/floor-plan-style-reference.jpg
+All floor plan drawings must reference the project visual standard library.
 
-该文件作为永久视觉标准（Permanent Visual Standard）。
+所有平面图绘制必须调用项目视觉标准图库。
 
-Reference image defines:
+
+Reference path（参考路径）:
+
+reference-library/floor-plan/reference/
+
+
+The reference library is the permanent visual standard.
+
+该图库作为永久视觉标准。
+
+
+Reference images define:
 
 参考图片定义：
 
+
 1. Architectural hand-drawn floor plan style.
+
    建筑手绘平面表达风格。
 
-2. Black and white line drawing.
-   黑白线稿表现。
+
+2. Black and white architectural line drawing.
+
+   黑白建筑线稿表达。
+
 
 3. Wall line thickness and hierarchy.
+
    墙体线条粗细关系。
 
-4. Furniture line drawing style.
+
+4. Furniture line drawing language.
+
    家具线稿表达方式。
 
-5. Annotation placement.
-   文字说明布局方式。
+
+5. Annotation placement and presentation layout.
+
+   文字标注位置及方案排版方式。
+
 
 6. Professional architectural presentation style.
+
    专业建筑方案展示风格。
 
 
-The reference image defines graphic style only, not architectural layout.
+The reference library defines graphic style only, not architectural layout.
 
-参考图片只定义绘图表现方式，不定义建筑布局。
+该标准图库只定义绘图表现方式，不定义建筑空间布局。
 
-所有生成的平面图必须接近该视觉标准。
+
+All generated floor plans must follow this visual standard.
+
+所有生成的平面图必须遵循该视觉标准。
 
 ## Space Layout Preservation（空间布局锁定）
 
