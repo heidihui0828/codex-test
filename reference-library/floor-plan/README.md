@@ -24,7 +24,6 @@ The reference images define graphic style only.
 
 参考图片只定义绘图表现方式。
 
-
 They do not define:
 
 不定义：
@@ -118,12 +117,15 @@ Purpose:
 用途：
 
 
-Defines professional presentation layout.
-
-定义专业方案展示排版方式。
-
+This library defines the visual presentation standards for architectural floor plan drawings.
 
 Reference elements:
+
+The reference images define graphic style only.
+
+They do not define architectural layout.
+
+参考图片只定义绘图表现方式，不定义建筑布局。
 
 参考内容：
 
