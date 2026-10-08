@@ -8,7 +8,17 @@
 - 02F-original-floor-plan.jpg — 二层原始平面图
 
 ## Vertical Drawings
-- original-elevations-and-sections-01.jpg — 原始立面与剖面联合图
+
+The original project contains four directional elevation drawings.
+
+- living-room-double-height-Elevation-East-1.jpg — 东立面
+- living-room-double-height-Elevation-North-1.jpg — 北立面
+- living-room-double-height-Elevation-South-1.jpg — 南立面
+- living-room-double-height-Elevation-West-1.jpg — 西立面
+
+The elevation drawings are used to verify the vertical architectural relationships of the duplex and the double-height living room.
+
+原始立面图用于确认复式住宅的垂直空间关系以及客厅两层挑空关系。
 
 ## Spatial Characteristics
 - 客厅为两层挑空空间（Double-height Living Room）
