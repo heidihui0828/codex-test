@@ -176,7 +176,7 @@ All generated floor plans must follow this visual standard.
 
 
 
-## Orientation Preservation（空间方向锁定） ← 新增
+## Orientation Preservation（空间方向锁定）
 
 When generating visual presentations:
 
@@ -202,10 +202,27 @@ When generating visual presentations:
 入口、窗户、门、厨房和卫生间方向必须与原始平面一致。
 
 
-5. The generated image must correspond to the same viewpoint logic as the original drawing.
+5. The generated interior view must be consistent with the spatial orientation and architectural relationships of the original drawings.
 
-生成视角必须符合原始平面图逻辑。
+生成的室内视角必须与原始图纸的空间方向及建筑关系保持一致。
 
+## Human Eye-Level Perspective（人体正常视角）
+
+生成室内效果图时：
+
+1. 默认采用正常成年人的站立视角；
+2. 相机高度约为1.5–1.7米，推荐约1.6米；
+3. 保持正常水平视线；
+4. 不采用鸟瞰、俯视、高机位或异常低机位；
+5. 不通过提高相机高度表现空间尺度；
+6. 不通过极端广角夸大空间面积或挑空高度；
+7. 家具、门窗、墙体及空间高度必须符合真实人体尺度；
+8. 效果图应模拟真实居住者站在空间中的观察感受；
+9. 客厅两层挑空应通过真实视角表现，而不是通过异常相机高度夸大；
+10. 除非用户明确指定其他视角，否则所有室内效果图默认采用人体正常视角。
+
+The camera perspective must serve architectural accuracy rather than visual exaggeration.
+相机视角必须服务于建筑准确性，而不是为了视觉效果夸大空间。
 
 ## Allowed Visual Modification（可修改范围锁定）
 
