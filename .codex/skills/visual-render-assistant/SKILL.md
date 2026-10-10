@@ -1,56 +1,38 @@
-Design Concept:
-Natural Living Sequence
+---
+name: visual-render-assistant
+version: 0.2
 
-设计概念：
-自然生活序列
+description: >
+  Convert approved design concepts and spatial plans into professional visual presentations.
 
+  将已确定的设计概念和空间规划转化为专业视觉表达。
+---
 
-Design Principles:
-1. Indoor-outdoor connection
-2. Natural material expression
-3. Light as spatial experience
-4. Family interaction
+# Visual Render Assistant / 效果图助手
+Purpose / 目的
 
-设计原则：
-1. 室内外连续
-2. 自然材料表达
-3. 光作为空间体验
-4. 家庭互动
+Workflow / 工作流程
 
+Core Principles / 核心原则
 
-Material Direction:
-Primary material:
-Natural wood
+Spatial Accuracy Rules / 空间准确性规则
 
-Secondary materials:
-Natural stone
-Glass
+Core Rendering Language / 核心渲染语言
 
-材料方向：
-主材：
-天然木材
+Rendering Requirements / 渲染要求
 
-辅材：
-天然石材
-玻璃
+Input Requirements / 输入要求
 
+Core Design Constraints / 核心设计约束
 
-Atmosphere:
-Calm
-Warm
-Natural
+Architectural Boundary Rules / 建筑边界规则
 
-氛围：
-安静
-温暖
-自然
+Orientation Preservation / 空间方向锁定
 
+Human Eye-Level Perspective / 人体正常视角
 
-Visual Keywords:
-Natural living
-Indoor outdoor connection
-Warm wood
-Natural stone
-Soft daylight
-Family lifestyle
-Minimal modern home
+Allowed Visual Modification / 可修改范围
+
+Output Type Control / 输出类型控制
+
+Responsibility Boundary / 职责边界
