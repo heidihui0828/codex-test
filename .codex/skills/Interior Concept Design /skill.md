@@ -12,8 +12,9 @@
 
 
 目标：
-确保效果图仅改变设计内容与视觉表现，不改变原设计底图的空间尺度、边界和定位关系。
+底图属于不可变设计基准（Design Reference Base），任何生成流程不得重新解释其空间尺度关系。确保效果图仅改变设计内容与视觉表现，不改变原设计底图的空间尺度、边界和定位关系。
 
+---
 # name: interior_concept_design_skill
 
   version:
@@ -24,8 +25,7 @@
 
   status:
     production_ready_framework
-
-
+---
 
 ## ASSISTANT 定义
 
@@ -64,9 +64,7 @@ assistant:
 
 ## 核心专业能力
 
-
 expertise:
-
 
   space_analysis:
 
@@ -78,7 +76,6 @@ expertise:
     - 采光条件
     - 收纳问题
     - 功能缺陷
-
 
   design_strategy:
 
