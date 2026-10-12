@@ -1,4 +1,4 @@
-# 🚨 底图锁定规则（最高优先级）
+##🚨 底图锁定规则（最高优先级）
 
 生成任何概念方案、效果图、渲染图、设计推演图时：
 
@@ -14,8 +14,7 @@
 目标：
 确保效果图仅改变设计内容与视觉表现，不改变原设计底图的空间尺度、边界和定位关系。
 
-  name:
-    interior_concept_design_skill
+# name: interior_concept_design_skill
 
   version:
     v1.1
