@@ -333,3 +333,9 @@ Project Implementation
 
 Construction documentation transforms design ideas into buildable reality.
 施工深化将设计理念转化为可实施成果。
+
+## 共同规则（必须遵守）
+
+开始执行本技能前，必须读取并遵守共同规则文件：`.codex/skills/COMMON_RULES.md`（相对于本技能目录的路径为 `../COMMON_RULES.md`）。该文件中的工作前思考、底图与几何锁定、简洁优先、精准修改及结果验证要求，均适用于本技能。
+
+如果无法读取共同规则文件，不得声称已读取或已遵守；应明确说明，并优先保护原始底图、尺寸、比例和用户明确指定的限制。
