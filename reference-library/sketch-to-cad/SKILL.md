@@ -1,120 +1,143 @@
 ---
 name: sketch-to-cad
-description: Convert hand-drawn sketches, scanned drawings, or photographed sketches into structured, editable 2D CAD geometry. Use this skill when the user wants to turn a hand sketch into CAD, DXF, DWG, a dimensioned drawing, or a clean CAD reference. Prefer dimensionally constrained reconstruction over literal tracing.
+description: 将手绘草稿、扫描图或拍摄的草图转换为结构清晰、可编辑的二维 CAD 几何图形。当用户希望将手绘草图转换为 CAD、DXF、DWG、尺寸图或规范 CAD 参考图时使用此 Skill。优先根据尺寸和设计意图重建几何，而不是机械描摹手绘线条。
 ---
 
-# Sketch to CAD
+# 手绘草稿转 CAD
 
-Turn a hand-drawn sketch into clean, editable CAD geometry while preserving the intended design.
+将手绘草稿转换为干净、可编辑的 CAD 几何，同时尽可能保留原始设计意图。
 
-## Goal
+## 目标
 
-Create a CAD-ready reconstruction that is:
-- dimensionally consistent
-- editable
-- organized by logical layers
-- faithful to the design intent
-- validated before export
+生成符合 CAD 使用习惯的重建结果：
 
-## Before starting
+- 尺寸关系正确
+- 可以继续编辑
+- 按逻辑整理图层
+- 保留设计意图
+- 导出前完成检查
 
-Inspect the source and determine:
-- drawing type: architectural, interior, furniture, product, mechanical, or general diagram
-- visible geometry: lines, polylines, circles, arcs, openings, symbols
-- dimensions and units
-- text and annotations
-- construction/reference lines
-- ambiguous or missing information
-- whether the source is a scan or a photograph
+## 开始前
 
-If the drawing is photographed, account for rotation, perspective distortion, shadows, and uneven scaling before using it as a geometric reference.
+先检查原始草稿，并判断：
 
-## Scale and dimensions
+- 图纸类型：建筑、室内、家具、产品、机械或其他示意图
+- 可见几何：直线、多段线、圆、圆弧、开口、符号
+- 尺寸和单位
+- 文字及注释
+- 辅助线和参考线
+- 模糊、不确定或缺失的信息
+- 输入是扫描图还是照片
 
-A reliable real-world dimension is required for a dimensionally accurate result.
+如果输入是照片，需要考虑：
 
-Use known dimensions to establish scale. If several known dimensions conflict, flag the conflict instead of silently choosing one.
+- 旋转
+- 透视变形
+- 阴影
+- 光照不均
+- X、Y 方向可能存在的比例误差
 
-Never invent missing dimensions.
+不要直接把未经校正的照片当作精确几何底图。
 
-If no reliable dimension is available:
-- produce only a proportional/reference reconstruction
-- clearly mark the result as unscaled
-- do not present estimated dimensions as factual
+## 比例和尺寸
 
-## Reconstruction rules
+如果需要得到具有真实尺寸的 CAD 图，必须至少有一个可靠的实际尺寸作为比例依据。
 
-Do not blindly trace every hand-drawn stroke.
+使用草稿中明确标注的尺寸建立比例。
 
-Reconstruct the intended CAD geometry:
-- make intended horizontal elements horizontal
-- make intended vertical elements vertical
-- preserve parallel and perpendicular relationships
-- use exact circles and arcs where intended
-- join related segments into clean polylines
-- remove duplicate, accidental, or insignificant strokes
-- preserve symmetry and repetition when clearly intended
-- prioritize explicit dimensions over visual estimation
+如果存在多个已知尺寸，并且它们之间明显冲突，应报告冲突，而不是自行选择一个尺寸。
 
-Treat dimension lines, arrows, handwritten notes, and construction marks as annotations unless the sketch clearly indicates that they are geometry.
+严禁编造缺失的尺寸。
 
-## Recommended layers
+如果没有可靠的实际尺寸：
 
-For architectural/interior drawings:
-- A-WALL
-- A-DOOR
-- A-WINDOW
-- A-FURN
-- A-DIM
-- A-TEXT
-- A-HATCH
-- A-CONSTRUCTION
+- 可以生成按比例关系重建的参考图
+- 必须明确说明该结果没有经过真实尺寸标定
+- 不得把估算尺寸当作真实尺寸
 
-For mechanical/product drawings:
-- M-PROFILE
-- M-HOLE
-- M-CENTER
-- M-DIM
-- M-TEXT
-- M-CONSTRUCTION
+## 几何重建原则
 
-Use the simplest layer structure appropriate to the drawing. Do not create unnecessary layers.
+不要机械地描摹每一条手绘笔迹。
 
-## Validation
+应根据尺寸和设计意图重建规范 CAD 几何：
 
-Before export, verify:
-- known reference dimensions
-- overall width and height
-- wall or profile thickness where applicable
-- horizontal and vertical alignment
-- parallelism and perpendicularity
-- intersections and joins
-- closed profiles where required
-- duplicate or disconnected geometry
-- layer assignment
-- units and scale
-- unresolved ambiguities
+- 原本应为水平的线，应重建为水平线
+- 原本应为垂直的线，应重建为垂直线
+- 保持明确的平行关系
+- 保持明确的垂直关系
+- 圆形应使用准确的圆
+- 曲线应根据设计意图使用圆弧或其他合适几何
+- 将属于同一几何对象的线段连接为干净的多段线
+- 删除明显的重复线、误画线和无意义的短线
+- 对明确的对称结构保持对称
+- 对明确重复出现的元素保持一致
+- 已标注的尺寸优先于视觉估算
 
-Separate confirmed geometry from estimated or ambiguous geometry.
+尺寸线、箭头、手写说明和施工辅助线默认属于注释或参考信息，除非草图明确表示它们本身就是设计几何。
 
-## Output
+## 推荐图层
 
-Prefer:
-1. editable CAD geometry
-2. DXF as the primary exchange format
-3. DWG when a DWG-capable workflow is available
-4. a concise validation summary
+### 建筑 / 室内图
 
-The validation summary should state:
-- drawing type
-- units
-- scale/reference dimension
-- what was reconstructed
-- unresolved ambiguities
-- validation status
+- A-WALL：墙体
+- A-DOOR：门
+- A-WINDOW：窗
+- A-FURN：家具
+- A-DIM：尺寸
+- A-TEXT：文字
+- A-HATCH：填充
+- A-CONSTRUCTION：辅助线
 
-## Quality principle
+### 机械 / 产品图
 
-The objective is not to make the CAD file look like the hand drawing.
+- M-PROFILE：轮廓
+- M-HOLE：孔
+- M-CENTER：中心线
+- M-DIM：尺寸
+- M-TEXT：文字
+- M-CONSTRUCTION：辅助线
 
-The objective is to recover the intended geometry and dimensions represented by the hand drawing, while making uncertainty explicit.
+根据实际图纸选择最简单、足够使用的图层结构，不要无意义地增加图层。
+
+## 验证
+
+导出前检查：
+
+- 已知参考尺寸
+- 总长度和总宽度
+- 墙厚或零件厚度
+- 水平和垂直关系
+- 平行和垂直关系
+- 线段连接和交点
+- 必要的闭合轮廓
+- 重复几何
+- 断开的几何
+- 图层归属
+- 单位和比例
+- 尚未解决的模糊区域
+
+将已经确认的几何与估算或存在歧义的几何区分开。
+
+## 输出
+
+优先输出：
+
+1. 可编辑的 CAD 几何
+2. DXF 作为主要交换格式
+3. 如果存在支持 DWG 的工作流，再输出 DWG
+4. 简短的验证报告
+
+验证报告应说明：
+
+- 图纸类型
+- 使用单位
+- 比例依据或参考尺寸
+- 已重建的内容
+- 尚未解决的歧义
+- 最终检查状态
+
+## 核心原则
+
+目标不是让 CAD 图看起来像手绘草稿。
+
+目标是从手绘草稿中恢复它所表达的设计意图、几何关系和尺寸信息，并明确标记无法确定的部分。
