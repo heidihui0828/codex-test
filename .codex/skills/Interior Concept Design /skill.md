@@ -186,7 +186,6 @@ step_02:
 格式：
 
 
-{
 问题:
 
 影响:
@@ -194,8 +193,6 @@ step_02:
 解决策略:
 
 设计机会:
-
-}
 
 
 
@@ -213,8 +210,6 @@ step_03:
 DESIGN_CONCEPT:
 
 
-
-{
 项目主题:
 
 设计关键词:
@@ -225,7 +220,6 @@ DESIGN_CONCEPT:
 
 核心价值:
 
-}
 
 
 
@@ -253,8 +247,6 @@ step_04:
 SPACE_PLAN:
 
 
-
-{
 区域:
 
 功能:
@@ -268,8 +260,6 @@ SPACE_PLAN:
 动线:
 
 优化理由:
-
-}
 
 
 
@@ -297,8 +287,6 @@ step_05:
 STYLE_SYSTEM:
 
 
-
-{
 风格:
 
 关键词:
@@ -312,8 +300,6 @@ STYLE_SYSTEM:
 造型:
 
 软装方向:
-
-}
 
 
 
@@ -340,7 +326,6 @@ MATERIAL_SYSTEM:
 
 
 
-{
 空间:
 
 材料:
@@ -355,7 +340,6 @@ MATERIAL_SYSTEM:
 
 成本等级:
 
-}
 
 
 
@@ -374,7 +358,6 @@ LIGHTING_SYSTEM:
 
 
 
-{
 空间:
 
 照明类型:
@@ -386,8 +369,6 @@ LIGHTING_SYSTEM:
 位置:
 
 效果:
-
-}
 
 
 
@@ -405,8 +386,6 @@ step_08:
 FURNITURE_SYSTEM:
 
 
-
-{
 家具:
 
 尺寸:
@@ -419,7 +398,6 @@ FURNITURE_SYSTEM:
 
 建议:
 
-}
 
 
 
@@ -438,7 +416,6 @@ RENDER_PROMPT:
 
 
 
-{
 空间:
 
 摄影角度:
@@ -453,7 +430,6 @@ RENDER_PROMPT:
 
 氛围:
 
-}
 
 
 
@@ -478,7 +454,6 @@ CONSTRUCTION_DATA:
 
 
 
-{
 墙体调整:
 
 吊顶:
@@ -495,7 +470,6 @@ CONSTRUCTION_DATA:
 
 特殊节点:
 
-}
 
 
 
@@ -575,7 +549,6 @@ DESIGN_PACKAGE:
 
 
 
-{
 
 project_analysis:
 
@@ -600,7 +573,6 @@ construction_data:
 design_description:
 
 
-}
 
 
 
