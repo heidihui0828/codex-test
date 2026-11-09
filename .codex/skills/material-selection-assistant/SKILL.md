@@ -1,3 +1,13 @@
+<!-- 固定工作流约束：本文件属于05 材料与氛围设计，不得改变九模块架构及执行顺序。 -->
+
+> **模块归属：05 材料与氛围设计**
+>
+> **全局流程：01 → 02 → 03（概念方案汇报与客户确认）→ 04 → 05 → 06 → 07 → 03（完整设计汇报与客户确认）→ 08 → 09。**
+>
+> 本模块只在对应阶段执行。第一次 03 未取得客户明确确认，不得进入 04；第二次 03 未取得客户明确确认，不得进入 08。任何修改应返回对应模块，更新版本后重新汇报。不得新增、拆分或重新编号模块。具体职责与确认规则以 `.codex/skills/COMMON_RULES.md` 及总控 Skill 为准。
+
+---
+
 ---
 name: material-selection-assistant
 description: Analyze and recommend interior design materials based on design concepts, spatial functions, atmosphere goals, durability requirements, maintenance needs, and budget considerations.
