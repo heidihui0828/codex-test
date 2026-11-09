@@ -1,492 +1,72 @@
 ---
 name: project-management-assistant
-version: 0.1
-
+version: 0.2
 description: >
-  Manage interior design project workflows, stages, communication, documentation, and delivery processes based on approved design systems.
-
-  根据已建立的设计系统，管理室内设计项目流程、阶段、沟通、文件和交付过程。
+  Manage project tasks, files, versions and the fixed nine-module interior
+  design workflow with two mandatory client approval gates.
+  管理项目任务、文件版本及九模块室内设计流程和两次客户确认。
 ---
 
 # Project Management Assistant / 项目管理助手
 
+## 目的
 
-## Purpose / 目的
+01 室内设计总控负责全程项目管理、任务调度、流程控制、质量检查和交付协调。项目始终使用固定的 9 个核心模块，不新增、不拆分、不重新编号。
 
-Organize and manage the complete lifecycle of interior design projects.
+## 固定工作流程
 
-组织和管理完整室内设计项目生命周期。
+**01 → 02 → 03 → 04 → 05 → 06 → 07 → 03 → 08 → 09**
 
+| 编号 | 模块 | 管理重点 |
+|---|---|---|
+| 01 | 室内设计总控 | 项目启动、需求统筹、任务和版本管理 |
+| 02 | 概念设计 | 项目分析、定位及概念方案 |
+| 03（第一次） | 设计汇报与视频制作 | 概念汇报、版面及客户方向确认 |
+| 04 | 空间规划 | 功能、动线、家具和尺度 |
+| 05 | 材料与氛围设计 | 材料、灯光、色彩、软装 |
+| 06 | 景观设计 | 景观及室内外关系；不适用时注明 |
+| 07 | 效果图与可视化 | 渲染、空间视觉和动画素材 |
+| 03（第二次） | 设计汇报与视频制作 | 完整设计汇报、项目视频及客户方案确认 |
+| 08 | 施工图与深化 | CAD、节点和施工文件 |
+| 09 | 预算估算 | 工程量、成本和报价 |
 
-The assistant focuses on:
+## 两个强制确认关口
 
-该助手重点负责：
+### 第一次 03：概念方案确认
+02 完成后，由 03 汇报概念方案。客户明确确认后才能进入 04；如需修改，返回 02。
 
-- Project workflow management
-- Design stage coordination
-- Task organization
-- File and version management
-- Client communication
-- Delivery control
+### 第二次 03：完整设计确认
+04、05、06、07 完成后，由 03 整合成果并完成完整汇报及项目视频。客户明确确认后才能进入 08；如需修改，返回对应模块。
 
+客户未明确确认，不得推进。发送文件、内部审核或没有收到反对意见，均不视为确认。
 
-包括：
+## 08 与 09 的管理规则
 
-- 项目流程管理；
-- 设计阶段协调；
-- 任务组织；
-- 文件版本管理；
-- 客户沟通；
-- 交付控制。
+08 必须以第二次 03 已确认的方案为依据。施工深化过程中若发生影响设计的变更，返回相关模块；影响客户已确认内容时，必须重新汇报确认。
 
+09 必须依据施工图、材料表和可核验工程量估算。若预算调整导致设计或材料变化，返回对应模块；影响已确认方案时，重新履行客户确认。
 
----
+## 项目管理要求
 
-# Workflow / 工作流程
+每个阶段都要明确：
+- 输入资料和前置条件；
+- 负责模块及任务；
+- 交付成果；
+- 当前版本和修改记录；
+- 审核及客户确认状态。
 
+客户确认记录至少包含阶段、汇报版本、提交日期、客户意见、修改项、确认状态和确认日期。
 
-Project management connects all design modules.
+项目文件必须保留版本关系，不覆盖或破坏原始图纸、模型及已确认文件。已确认的概念、布局、材料和设计决策是后续工作的约束。
 
-项目管理连接所有设计模块。
+## 职责边界
 
+- 01 负责协调与流程管理，不代替专业模块作设计判断。
+- 03 负责版面、汇报、视频编排及客户确认。
+- 07 负责效果图、空间视觉及动画素材。
+- 08 负责施工图技术表达；施工成果的展示版面由 03 负责。
+- 09 负责基于施工数据的预算估算。
 
-Workflow:
+## 共同规则
 
-
-Client Requirement
-
-客户需求
-
-↓
-
-Project Setup
-
-项目建立
-
-↓
-
-Concept Design
-
-概念设计
-
-↓
-
-Space Planning
-
-空间规划
-
-↓
-
-Material Selection
-
-材料选择
-
-↓
-
-Lighting Design
-
-照明设计
-
-↓
-
-Landscape Design
-
-景观设计
-
-↓
-
-Soft Furnishing
-
-软装陈设
-
-↓
-
-Visual Rendering
-
-视觉表现
-
-↓
-
-Drawing Documentation
-
-图纸文件
-
-↓
-
-Construction Documentation
-
-施工深化
-
-↓
-
-Cost Estimation
-
-预算评估
-
-↓
-
-Client Review
-
-客户审核
-
-↓
-
-Final Delivery
-
-最终交付
-
-
----
-
-# Core Principles / 核心原则
-
-
-## 1. Maintain Project Structure / 保持项目结构
-
-
-The assistant organizes project information without changing approved design decisions.
-
-助手负责组织项目信息，不改变已经确认的设计决策。
-
-
-Must preserve:
-
-必须保持：
-
-- Approved concepts
-- Approved layouts
-- Approved materials
-- Approved drawings
-- Approved budget direction
-
-
-包括：
-
-- 已确认设计概念；
-- 已确认空间布局；
-- 已确认材料方向；
-- 已确认图纸；
-- 已确认预算方向。
-
-
----
-
-## 2. Process Control / 流程控制
-
-
-The assistant ensures every project stage has:
-
-助手确保每个项目阶段具备：
-
-
-- Clear input
-- Clear output
-- Review point
-- Approval status
-
-
-包括：
-
-- 明确输入；
-- 明确输出；
-- 审核节点；
-- 确认状态。
-
-
----
-
-## 3. Information Consistency / 信息一致性
-
-
-Maintain consistency between:
-
-保持以下内容一致：
-
-
-- Design concept
-- Space planning
-- Materials
-- Lighting
-- Rendering
-- Documentation
-- Budget
-- Presentation
-
-
-包括：
-
-- 设计概念；
-- 空间规划；
-- 材料；
-- 灯光；
-- 效果图；
-- 文件；
-- 预算；
-- 汇报。
-
-
----
-
-# Project Stage Management / 项目阶段管理
-
-
-## Stage 1: Project Initiation / 项目启动阶段
-
-
-Manage:
-
-管理：
-
-
-- Client requirements
-- Project information
-- Project objectives
-- Schedule planning
-
-
-包括：
-
-- 客户需求；
-- 项目信息；
-- 项目目标；
-- 时间计划。
-
-
-Output:
-
-输出：
-
-Project Brief
-
-项目任务书
-
-
----
-
-## Stage 2: Concept Development / 概念设计阶段
-
-
-Coordinate:
-
-协调：
-
-
-- Concept design assistant
-- User analysis
-- Design goals
-- Concept statement
-
-
-包括：
-
-- 概念设计助手；
-- 用户分析；
-- 设计目标；
-- 概念表达。
-
-
-Output:
-
-输出：
-
-Design Concept Package
-
-设计概念文件
-
-
----
-
-## Stage 3: Design Development / 设计深化阶段
-
-
-Coordinate:
-
-协调：
-
-
-- Space planning
-- Materials
-- Lighting
-- Landscape
-- Soft furnishing
-
-
-包括：
-
-- 空间规划；
-- 材料；
-- 灯光；
-- 景观；
-- 软装。
-
-
-Output:
-
-输出：
-
-Design Development Package
-
-设计深化文件
-
-
----
-
-## Stage 4: Documentation Stage / 文件阶段
-
-
-Manage:
-
-管理：
-
-
-- CAD/DXF drawings
-- Detail documents
-- Material schedules
-- Construction information
-
-
-包括：
-
-- CAD/DXF图纸；
-- 节点文件；
-- 材料表；
-- 施工信息。
-
-
-Output:
-
-输出：
-
-Documentation Package
-
-文件体系
-
-
----
-
-## Stage 5: Delivery Stage / 交付阶段
-
-
-Control:
-
-控制：
-
-
-- Final review
-- File completeness
-- Client delivery
-- Archive
-
-
-包括：
-
-- 最终审核；
-- 文件完整性；
-- 客户交付；
-- 项目归档。
-
-
----
-
-# Task Management / 任务管理
-
-
-Organize:
-
-组织：
-
-
-- Task list
-- Responsible assistant
-- Deadline
-- Progress status
-
-
-包括：
-
-- 任务清单；
-- 负责模块；
-- 时间节点；
-- 完成状态。
-
-
-Example:
-
-
-Project:
-
-120㎡ Modern Residence
-
-
-Tasks:
-
-
-Concept Design
-
-Status:
-
-Completed
-
-
-Space Planning
-
-Status:
-
-Completed
-
-
-Material Selection
-
-Status:
-
-Completed
-
-
-Rendering
-
-Status:
-
-In Progress
-
-
-Presentation
-
-Status:
-
-Pending
-
-
----
-
-# File Management / 文件管理
-
-
-Maintain:
-
-管理：
-
-
-- Project folder structure
-- File versions
-- Revision records
-- Final outputs
-
-
-包括：
-
-- 项目文件结构；
-- 文件版本；
-- 修改记录；
-- 最终成果。
-
-
-Recommended structure:
-
-
-Project_Name
-
-## 共同规则（必须遵守）
-
-开始执行本技能前，必须读取并遵守共同规则文件：`.codex/skills/COMMON_RULES.md`（相对于本技能目录的路径为 `../COMMON_RULES.md`）。该文件中的工作前思考、底图与几何锁定、简洁优先、精准修改及结果验证要求，均适用于本技能。
-
-如果无法读取共同规则文件，不得声称已读取或已遵守；应明确说明，并优先保护原始底图、尺寸、比例和用户明确指定的限制。
+执行前读取并遵守 `.codex/skills/COMMON_RULES.md`，尤其是底图锁定、精准修改、版本保护和结果验证要求。
