@@ -1,76 +1,12 @@
-<!-- 固定工作流约束：本文件属于05 材料与氛围设计，不得改变九模块架构及执行顺序。 -->
-
-> **模块归属：05 材料与氛围设计**
->
-> **全局流程：01 → 02 → 03（概念方案汇报与客户确认）→ 04 → 05 → 06 → 07 → 03（完整设计汇报与客户确认）→ 08 → 09。**
->
-> 本模块只在对应阶段执行。第一次 03 未取得客户明确确认，不得进入 04；第二次 03 未取得客户明确确认，不得进入 08。任何修改应返回对应模块，更新版本后重新汇报。不得新增、拆分或重新编号模块。具体职责与确认规则以 `.codex/skills/COMMON_RULES.md` 及总控 Skill 为准。
-
----
-
 ---
 name: lighting-design-assistant
-description: Analyze and develop interior lighting strategies based on design concepts, spatial functions, atmosphere goals, materials, user experience, and technical requirements.
+description: 05 灯光设计子项入口。本文件仅保留兼容入口，实际工作统一由对应模块主 SKILL 执行。
 ---
 
-# Lighting Design Assistant / 灯光设计助手
+# 05 灯光设计子项入口
 
-## Purpose / 目的
+本技能已整合至对应模块主 SKILL，不再单独运行。
 
-Develop lighting strategies that enhance interior concepts, spatial functions, atmosphere, materials, and user experience.
+**统一执行入口：** `.codex/skills/material-selection-assistant/SKILL.md`
 
-建立能够强化设计概念、空间功能、氛围、材料表现和用户体验的灯光策略。
-
----
-
-## Basic Rules / 基本规则
-
-1. Analyze the relationship between lighting and the overall design concept.
-
-分析灯光与整体设计概念之间的关系。
-
-2. Define lighting layers including ambient lighting, task lighting, accent lighting, and decorative lighting.
-
-建立灯光层次，包括基础照明、功能照明、重点照明和装饰照明。
-
-3. Consider space functions, user activities, visual comfort, and energy efficiency.
-
-考虑空间功能、用户活动、视觉舒适度和能源效率。
-
-4. Coordinate lighting with materials, colors, textures, and architectural elements.
-
-协调灯光与材料、色彩、质感和建筑元素之间的关系。
-
-5. Provide lighting solutions for different budget levels and technical conditions.
-
-根据不同预算和技术条件提供灯光方案。
-
----
-
-## Output Format / 输出格式
-
-1. Design Concept Understanding / 设计概念理解
-
-2. Lighting Strategy / 灯光策略
-
-3. Ambient Lighting Plan / 基础照明方案
-
-4. Task Lighting Plan / 功能照明方案
-
-5. Accent Lighting Plan / 重点照明方案
-
-6. Decorative Lighting Direction / 装饰灯光方向
-
-7. Color Temperature & Atmosphere / 色温与氛围
-
-8. Control System Suggestions / 控制系统建议
-
-9. Budget Alternatives / 预算替代方案
-
-10. Further Questions / 深化问题
-
-## 共同规则（必须遵守）
-
-开始执行本技能前，必须读取并遵守共同规则文件：`.codex/skills/COMMON_RULES.md`（相对于本技能目录的路径为 `../COMMON_RULES.md`）。该文件中的工作前思考、底图与几何锁定、简洁优先、精准修改及结果验证要求，均适用于本技能。
-
-如果无法读取共同规则文件，不得声称已读取或已遵守；应明确说明，并优先保护原始底图、尺寸、比例和用户明确指定的限制。
+请直接调用主 SKILL，避免重复流程、重复输出或规则冲突。
