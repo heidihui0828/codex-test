@@ -1,54 +1,28 @@
-<!-- 固定工作流约束：本文件属于07 效果图与可视化，不得改变九模块架构及执行顺序。 -->
-
-> **模块归属：07 效果图与可视化**
->
-> **全局流程：01 → 02 → 03（概念方案汇报与客户确认）→ 04 → 05 → 06 → 07 → 03（完整设计汇报与客户确认）→ 08 → 09。**
->
-> 本模块只在对应阶段执行。第一次 03 未取得客户明确确认，不得进入 04；第二次 03 未取得客户明确确认，不得进入 08。任何修改应返回对应模块，更新版本后重新汇报。不得新增、拆分或重新编号模块。具体职责与确认规则以 `.codex/skills/COMMON_RULES.md` 及总控 Skill 为准。
-
----
-
 ---
 name: visual-render-assistant
-version: 0.2
-
-description: >
-  Convert approved design concepts and spatial plans into professional visual presentations.
-
-  将已确定的设计概念和空间规划转化为专业视觉表达。
+version: 0.3
+description: 07 效果图与可视化辅助入口，统一调用 Render Generation 主技能。
 ---
 
-# Visual Render Assistant / 效果图助手
-Purpose / 目的
+# 07 效果图与可视化辅助入口
 
-Workflow / 工作流程
+本文件是 07 的简明入口，不另建一套渲染流程。
 
-Core Principles / 核心原则
+**主技能：** `.codex/skills/Render Generation /Skill .md`
 
-Spatial Accuracy Rules / 空间准确性规则
+## 适用任务
 
-Core Rendering Language / 核心渲染语言
+- 将已确认的设计概念、空间规划和材料灯光方案转化为视觉方向；
+- 明确效果图类型、视角、镜头、构图和输出规格；
+- 检查多视角空间、家具、材料及灯光的一致性；
+- 为 03 提供效果图、空间场景和动画素材。
 
-Rendering Requirements / 渲染要求
+## 工作边界
 
-Input Requirements / 输入要求
+- 设计概念由 02 提供，空间布局由 04 确定；
+- 材料、灯光和软装依据 05 的专业成果；
+- 07 负责渲染与可视化，不擅自改变已确认方案；
+- 项目视频的脚本、分镜、字幕和剪辑编排由 03 负责；
+- 原始 CAD、DXF、SU、PDF 底图及其几何、尺寸和比例必须遵守共同规则。
 
-Core Design Constraints / 核心设计约束
-
-Architectural Boundary Rules / 建筑边界规则
-
-Orientation Preservation / 空间方向锁定
-
-Human Eye-Level Perspective / 人体正常视角
-
-Allowed Visual Modification / 可修改范围
-
-Output Type Control / 输出类型控制
-
-Responsibility Boundary / 职责边界
-
-## 共同规则（必须遵守）
-
-开始执行本技能前，必须读取并遵守共同规则文件：`.codex/skills/COMMON_RULES.md`（相对于本技能目录的路径为 `../COMMON_RULES.md`）。该文件中的工作前思考、底图与几何锁定、简洁优先、精准修改及结果验证要求，均适用于本技能。
-
-如果无法读取共同规则文件，不得声称已读取或已遵守；应明确说明，并优先保护原始底图、尺寸、比例和用户明确指定的限制。
+具体渲染参数、材质表现、多视角控制和质量检查，以 Render Generation 主技能为准。执行前遵守 `.codex/skills/COMMON_RULES.md`。
