@@ -63,3 +63,9 @@ The drawing process follows approved spatial decisions.
 开始执行本技能前，必须读取并遵守共同规则文件：`.codex/skills/COMMON_RULES.md`（相对于本技能目录的路径为 `../COMMON_RULES.md`）。该文件中的工作前思考、底图与几何锁定、简洁优先、精准修改及结果验证要求，均适用于本技能。
 
 如果无法读取共同规则文件，不得声称已读取或已遵守；应明确说明，并优先保护原始底图、尺寸、比例和用户明确指定的限制。
+
+
+
+## 08 模块职责边界
+
+本技能是 08 下的矢量绘图辅助工具，负责已确认空间方案的矢量表达、CAD 兼容图形组织及图纸结构整理。完整施工图体系、技术制图标准、尺寸标注、节点深化和施工文件由 Construction Drawing 主技能负责；施工文件协调与检查清单由 construction-documentation-assistant 辅助。本技能不得改变已确认设计或原始 CAD、DXF、SU、PDF 底图中的几何、尺寸和比例。
